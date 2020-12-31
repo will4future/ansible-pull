@@ -3,7 +3,9 @@
   connection: local
   become: yes
   tasks:
-  - name: Install zsh
-#    yum: name=zsh state=removed
-    yum: name=zsh state=installed
+  - name: OS post installation tasks
+
+- include: tasks/zsh_install.yml
+- include: tasks/lvm.yml
+- include: tasks/httpd01.yml
 

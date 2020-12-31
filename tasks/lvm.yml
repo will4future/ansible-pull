@@ -1,0 +1,14 @@
+---
+- hosts: all
+  user: root
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: Create logical volume of 1G
+    lvol: vg=rhel lv=test02 size=1g
+  - name: Create new directory
+    file: path=/wilson2 state=directory mode=0755
+  - name: Create filesystem
+    filesystem: fstype=xfs dev=/dev/rhel/test02
+  - name: Mount new filesystem
+    mount: name=/wilson2 src=/dev/mapper/rhel-test02 fstype=xfs state=mounted boot=yes

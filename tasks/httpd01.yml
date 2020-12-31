@@ -1,0 +1,11 @@
+---
+- hosts: all
+  #user: root
+  become: yes
+  #become_method: sudo
+  tasks:
+  - name: Install httpd package
+    yum: name=httpd state=installed
+  - name: Start httpd processes
+    service: name=httpd state=started
+
