@@ -1,3 +1,9 @@
 ---
-- name: Install zsh
-  yum: name=zsh state=installed
+- hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+  - name: Install zsh
+#    yum: name=zsh state=removed
+    yum: name=zsh state=installed
+
