@@ -3,9 +3,9 @@
   connection: local
   become: yes
   tasks:
-  - name: Say hi
-    tags: foo
-    shell: echo "hi"
+#  - name: Say hi
+#    tags: foo
+#    shell: echo "hi"
 
 - include: tasks/zsh.yml
 - include: tasks/lvm.yml
