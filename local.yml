@@ -2,9 +2,11 @@
 - hosts: localhost
   connection: local
   become: yes
-
   tasks:
-    -name: wilson
-     include: tasks/zsh.yml
-#    - include: tasks/lvm.yml
-#    - include: tasks/httpd01.yml
+  - name: Say hi
+    tags: foo
+    shell: echo "hi"
+
+- include: tasks/zsh.yml
+- include: tasks/lvm.yml
+- include: tasks/httpd01.yml
