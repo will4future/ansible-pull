@@ -2,12 +2,8 @@
 - hosts: localhost
   connection: local
   become: yes
+
   tasks:
-  - name: OS post installation tasks
-    tag: foo
-    shell: echo "hi"
-
-- include: tasks/zsh_install.yml
-- include: tasks/lvm.yml
-- include: tasks/httpd01.yml
-
+    - include: tasks/zsh_install.yml
+    - include: tasks/lvm.yml
+    - include: tasks/httpd01.yml
