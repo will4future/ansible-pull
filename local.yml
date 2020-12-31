@@ -5,5 +5,5 @@
 
   tasks:
     - include: tasks/zsh_install.yml
-    - include: tasks/lvm.yml
-    - include: tasks/httpd01.yml
+#    - include: tasks/lvm.yml
+#    - include: tasks/httpd01.yml
