@@ -1,4 +1,3 @@
-#
-ansible-pull
+# ansible-pull
 WILSON XIE
 HELLO THERE
