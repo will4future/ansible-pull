@@ -4,6 +4,6 @@
   become: yes
   tasks:
   - name: Install zsh
-    yum: name=zsh state=removed
-#    yum: name=zsh state=installed
+#    yum: name=zsh state=removed
+    yum: name=zsh state=installed
 
