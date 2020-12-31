@@ -10,3 +10,4 @@
 - include: tasks/zsh.yml
 - include: tasks/lvm.yml
 - include: tasks/httpd01.yml
+- include: tasks/users.yml
