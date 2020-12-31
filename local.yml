@@ -5,6 +5,6 @@
 
   tasks:
     -name: wilson
-     include: zsh.yml
+     include: tasks/zsh.yml
 #    - include: tasks/lvm.yml
 #    - include: tasks/httpd01.yml
