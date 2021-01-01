@@ -1,4 +1,7 @@
-- name: create ansible user
-  user: 
-    name: ansible
-    system: yes
+---
+- hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+  - name: create ansible user
+    user: name=ansible system=yes
