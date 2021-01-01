@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+  - name: copy motd
+    copy: src=files/motd_ansible dest=/etc/motd mode=0644 owner=root 

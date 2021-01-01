@@ -11,3 +11,4 @@
 - include: tasks/lvm.yml
 - include: tasks/httpd01.yml
 - include: tasks/users.yml
+- include: tasks/copyfiles.yml
